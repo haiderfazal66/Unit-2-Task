@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Word Scramble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-right-buttons">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='how-to-play.html'">How to Play</button>
+        <button onclick="window.location.href='choose-theme.html'">Choose Different Theme</button>
+    </div>
+    <h1>Christmas Word Scramble</h1>
+    <div id="game-container">
+        <table>
+            <tr>
+                <th>Scrambled Word</th>
+                <th>Your Answer</th>
+            </tr>
+            <tbody id="words-table"></tbody>
+        </table>
+        <div id="input-container">
+            <input type="text" id="user-answer" placeholder="Enter your answer here">
+            <button onclick="checkAnswer('christmas')">Submit</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
