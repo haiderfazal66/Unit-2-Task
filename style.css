@@ -1,22 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #f0f0f0;
-}
-
-.hidden {
-    display: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 3em;
+    color: #333;
+    margin-top: 20px;
 }
 
 button {
     font-size: 1.5em;
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 20px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
 }
 
 .top-right-buttons {
@@ -25,34 +32,108 @@ button {
     right: 20px;
 }
 
-.top-right-button {
+.top-right-button, 
+.top-right-buttons button {
     font-size: 1em;
-    padding: 5px 10px;
+    padding: 5px 15px;
     margin-left: 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-right-button:hover, 
+.top-right-buttons button:hover {
+    background-color: #ddd;
+}
+
+#game-container {
+    margin-top: 50px;
 }
 
 table {
     margin: 0 auto;
     border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #000;
-    padding: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
     font-size: 1.2em;
+}
+
+th {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+td {
+    color: #555;
 }
 
 input[type="text"] {
     font-size: 1em;
     padding: 5px;
-}
-
-#input-container {
-    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #result {
     margin-top: 20px;
     font-size: 1.5em;
+    color: #333;
+}
+
+body.school {
+    background-color: #f0f8ff;
+}
+
+body.sports {
+    background-color: #e6ffe6;
+}
+
+body.computer_science {
+    background-color: #f0f0f5;
+}
+
+body.halloween {
+    background-color: #ffe6e6;
+}
+
+body.christmas {
+    background-color: #e6f0e6;
+}
+
+button.school, .top-right-button.school, .top-right-buttons button.school {
+    background-color: #1e90ff;
+    color: white;
+}
+
+button.sports, .top-right-button.sports, .top-right-buttons button.sports {
+    background-color: #32cd32;
+    color: white;
+}
+
+button.computer_science, .top-right-button.computer_science, .top-right-buttons button.computer_science {
+    background-color: #6a5acd;
+    color: white;
+}
+
+button.halloween, .top-right-button.halloween, .top-right-buttons button.halloween {
+    background-color: #ff4500;
+    color: white;
+}
+
+button.christmas, .top-right-button.christmas, .top-right-buttons button.christmas {
+    background-color: #ff6347;
+    color: white;
 }

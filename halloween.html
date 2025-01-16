@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="halloween">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween Word Scramble</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="halloween">
     <div class="top-right-buttons">
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='how-to-play.html'">How to Play</button>
-        <button onclick="window.location.href='choose-theme.html'">Choose Different Theme</button>
+        <button class="halloween" onclick="window.location.href='index.html'">Home</button>
+        <button class="halloween" onclick="window.location.href='how-to-play.html'">How to Play</button>
+        <button class="halloween" onclick="window.location.href='choose-theme.html'">Choose Different Theme</button>
     </div>
     <h1>Halloween Word Scramble</h1>
     <div id="game-container">
@@ -22,8 +22,7 @@
             <tbody id="words-table"></tbody>
         </table>
         <div id="input-container">
-            <input type="text" id="user-answer" placeholder="Enter your answer here">
-            <button onclick="checkAnswer('halloween')">Submit</button>
+            <button class="halloween" onclick="checkAnswer('halloween')">Submit</button>
         </div>
         <p id="result"></p>
     </div>

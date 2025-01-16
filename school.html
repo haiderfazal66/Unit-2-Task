@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="school">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Science Word Scramble</title>
+    <title>School Word Scramble</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="school">
     <div class="top-right-buttons">
-        <button onclick="window.location.href='index.html'">Home</button>
-        <button onclick="window.location.href='how-to-play.html'">How to Play</button>
-        <button onclick="window.location.href='choose-theme.html'">Choose Different Theme</button>
+        <button class="school" onclick="window.location.href='index.html'">Home</button>
+        <button class="school" onclick="window.location.href='how-to-play.html'">How to Play</button>
+        <button class="school" onclick="window.location.href='choose-theme.html'">Choose Different Theme</button>
     </div>
-    <h1>Computer Science Word Scramble</h1>
+    <h1>School Word Scramble</h1>
     <div id="game-container">
         <table>
             <tr>
@@ -22,8 +22,7 @@
             <tbody id="words-table"></tbody>
         </table>
         <div id="input-container">
-            <input type="text" id="user-answer" placeholder="Enter your answer here">
-            <button onclick="checkAnswer('computer_science')">Submit</button>
+            <button class="school" onclick="checkAnswer('school')">Submit</button>
         </div>
         <p id="result"></p>
     </div>
